@@ -4,3 +4,12 @@
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
 
 .brand-logo{display:block;width:92px;height:48px;object-fit:contain;mix-blend-mode:multiply}.brand{gap:13px}.footer-address{font-size:8px;letter-spacing:1px;color:rgba(255,255,255,.62);max-width:260px;line-height:1.6}@media(max-width:650px){.brand-logo{width:76px;height:40px}.footer-address{grid-column:1/-1;max-width:none}}
+
+/* Ajuste de composição do hero: texto à esquerda e palestrante visível à direita */
+.hero-image{inset:0 0 0 auto;width:51%;background:linear-gradient(90deg,var(--navy),transparent 32%),url('axis-hero.webp') center/cover no-repeat;opacity:.18}
+.hero-shade{background:linear-gradient(90deg,#07172c 0%,#07172c 39%,rgba(7,23,44,.82) 53%,rgba(7,23,44,.12) 100%),linear-gradient(0deg,rgba(5,18,36,.52),transparent 42%)}
+.hero-speaker{position:absolute;z-index:-1;right:7%;bottom:0;height:94%;width:auto;max-width:48%;object-fit:contain;object-position:center bottom;filter:grayscale(1);mix-blend-mode:normal;mask-image:linear-gradient(to right,transparent 0%,#000 18%,#000 100%)}
+.footer-logo{display:block;width:78px;height:48px;object-fit:contain;filter:brightness(0) invert(1)}
+.site-footer .footer-brand{gap:12px;flex-shrink:0}
+@media(max-width:900px){.hero-speaker{right:1%;height:82%;max-width:48%}.hero-content{max-width:62%}}
+@media(max-width:650px){.hero{min-height:720px;align-items:flex-start}.hero-speaker{right:-3%;height:49%;max-width:65%;bottom:0;opacity:.78}.hero-image{width:100%;opacity:.14}.hero-shade{background:linear-gradient(90deg,rgba(5,18,36,.94),rgba(5,18,36,.58)),linear-gradient(0deg,rgba(5,18,36,.35),transparent 75%)}.hero-content{max-width:100%;padding-top:78px}.hero h1{font-size:clamp(50px,11vw,68px)}.site-footer .footer-brand{grid-column:1/-1}.footer-logo{width:64px;height:40px}}
