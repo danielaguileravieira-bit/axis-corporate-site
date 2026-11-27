@@ -13,3 +13,7 @@
 .site-footer .footer-brand{gap:12px;flex-shrink:0}
 @media(max-width:900px){.hero-speaker{right:1%;height:82%;max-width:48%}.hero-content{max-width:62%}}
 @media(max-width:650px){.hero{min-height:720px;align-items:flex-start}.hero-speaker{right:-3%;height:49%;max-width:65%;bottom:0;opacity:.78}.hero-image{width:100%;opacity:.14}.hero-shade{background:linear-gradient(90deg,rgba(5,18,36,.94),rgba(5,18,36,.58)),linear-gradient(0deg,rgba(5,18,36,.35),transparent 75%)}.hero-content{max-width:100%;padding-top:78px}.hero h1{font-size:clamp(50px,11vw,68px)}.site-footer .footer-brand{grid-column:1/-1}.footer-logo{width:64px;height:40px}}
+
+/* Rodapé: remove o símbolo Axis Co.; mantém a identificação textual AXIS CORPORATE. */
+.site-footer .footer-logo{display:none!important}
+.site-footer .footer-brand{gap:0}
