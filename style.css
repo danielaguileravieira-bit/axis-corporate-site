@@ -17,3 +17,21 @@
 /* Rodapé: remove o símbolo Axis Co.; mantém a identificação textual AXIS CORPORATE. */
 .site-footer .footer-logo{display:none!important}
 .site-footer .footer-brand{gap:0}
+
+
+/* Composição final do hero: conteúdo à esquerda, foto do palestrante à direita */
+.hero{display:block;position:relative}
+.hero-content{position:relative;z-index:2;width:58%;max-width:820px;margin:0 auto 0 0;padding-left:clamp(28px,9vw,140px);padding-right:36px}
+.hero-speaker{position:absolute!important;left:auto!important;right:0!important;top:0;bottom:0;height:100%!important;width:48%!important;max-width:none!important;object-fit:contain!important;object-position:right bottom!important;z-index:0!important;mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.85) 15%,#000 35%)}
+.hero-shade{z-index:1;background:linear-gradient(90deg,#07172c 0%,#07172c 40%,rgba(7,23,44,.86) 55%,rgba(7,23,44,.08) 100%),linear-gradient(0deg,rgba(5,18,36,.45),transparent 42%)}
+.hero-image{left:auto!important;right:0!important;width:50%!important;z-index:-1!important}
+@media(max-width:900px){
+ .hero-content{width:62%;padding-left:5vw}
+ .hero-speaker{width:48%!important;opacity:.95}
+}
+@media(max-width:650px){
+ .hero{min-height:720px;display:block}
+ .hero-content{width:100%;max-width:none;padding:78px 25px 110px}
+ .hero-speaker{width:76%!important;height:52%!important;right:0!important;bottom:0;top:auto;opacity:.8}
+ .hero-shade{background:linear-gradient(90deg,rgba(5,18,36,.96),rgba(5,18,36,.68)),linear-gradient(0deg,rgba(5,18,36,.25),transparent 75%)}
+}
